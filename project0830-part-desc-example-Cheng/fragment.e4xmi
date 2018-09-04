@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_nwNhIKyaEeip--gmO6vpgA">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_pTLIsKyaEeip--gmO6vpgA" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_tSznAKyaEeip--gmO6vpgA" elementId="project0830-part-desc-example-cheng.command.showhelloworld" commandName="Show Hello World"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_08II0KyaEeip--gmO6vpgA" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_-cN_AKyaEeip--gmO6vpgA" elementId="project0830-part-desc-example-cheng.partdescriptor.simpleview1example" label="Simple View 1 Example" contributionURI="bundleclass://project0830-part-desc-example-Cheng/viewer.SimpleView">
+      <handlers xmi:id="_a8jL8KybEeip--gmO6vpgA" elementId="project0830-part-desc-example-cheng.handler.0" contributionURI="bundleclass://project0830-part-desc-example-Cheng/handler.ViewPopupHandler" command="_tSznAKyaEeip--gmO6vpgA"/>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_RMni8KybEeip--gmO6vpgA" elementId="project0830-part-desc-example-cheng.popupmenu.mypopupmenu" label="My Popup Menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_SidUgKybEeip--gmO6vpgA" elementId="project0830-part-desc-example-cheng.handledmenuitem.showhelloworld" label="Show Hello World" command="_tSznAKyaEeip--gmO6vpgA"/>
+      </menus>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>

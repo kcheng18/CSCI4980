@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_KpFAoKyfEeiR6IYNTNf6rQ">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_LcPi8KyfEeiR6IYNTNf6rQ" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_OZIK0KyfEeiR6IYNTNf6rQ" elementId="project0830-part-descriptor-cheng.command.showhellopartdescriptor" commandName="Show Hello Part Descriptor"/>
+    <elements xsi:type="commands:Command" xmi:id="_VZWFQKyfEeiR6IYNTNf6rQ" elementId="project0830-part-descriptor-cheng.command.clearpartdescriptor" commandName="Clear Part Descriptor"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_XMxKsKyfEeiR6IYNTNf6rQ" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_ZBhF0KyfEeiR6IYNTNf6rQ" elementId="project0830-part-descriptor-cheng.partdescriptor.viewpartdescriptor" label="View Part Descriptor" contributionURI="bundleclass://project0830-part-descriptor-Cheng/viewer.ViewPartDescriptor">
+      <handlers xmi:id="_sXCJAKyfEeiR6IYNTNf6rQ" elementId="project0830-part-descriptor-cheng.handler.0" contributionURI="bundleclass://project0830-part-descriptor-Cheng/handler.ShowHelloPartDescriptorHandler" command="_OZIK0KyfEeiR6IYNTNf6rQ"/>
+      <handlers xmi:id="_tA7akKyfEeiR6IYNTNf6rQ" elementId="project0830-part-descriptor-cheng.handler.1" contributionURI="bundleclass://project0830-part-descriptor-Cheng/handler.ClearPartDescriptorHandler" command="_VZWFQKyfEeiR6IYNTNf6rQ"/>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_l4W1YKyfEeiR6IYNTNf6rQ" elementId="project0830-part-descriptor-cheng.popupmenu.showhello" label="My Popup Menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_xM8yQKyjEeiR6IYNTNf6rQ" elementId="project0830-part-descriptor-cheng.handledmenuitem.showhellopartdescriptor" label="Show Hello Part Descriptor" command="_OZIK0KyfEeiR6IYNTNf6rQ"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_gbdVkKykEeiR6IYNTNf6rQ" elementId="project0830-part-descriptor-cheng.handledmenuitem.clearpartdescriptor" label="Clear Part Descriptor" command="_VZWFQKyfEeiR6IYNTNf6rQ"/>
+      </menus>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>
