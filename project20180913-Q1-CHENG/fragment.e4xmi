@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_CxKXwLeYEeitbd1Pnh9dhA">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_DVyu0LeYEeitbd1Pnh9dhA" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_IoMckLeYEeitbd1Pnh9dhA" elementId="project20180913-q1-cheng.command.readfile" commandName="Read File and Show Hello"/>
+    <elements xsi:type="commands:Command" xmi:id="_TLVuYLecEeitbd1Pnh9dhA" elementId="project20180913-q1-cheng.command.reverse" commandName="Reverse"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_MgoGsLeYEeitbd1Pnh9dhA" featurename="menuContributions" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="menu:MenuContribution" xmi:id="_P_L4QLeYEeitbd1Pnh9dhA" elementId="project20180913-q1-cheng.menucontribution.0" positionInParent="after=window" parentId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_2TtjILeYEeitbd1Pnh9dhA" elementId="project20180913-q1-cheng.menu.label20180913-q1-kwoksun-cheng" label="20180913-Q1-KwokSun-Cheng">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_3LNL0LeYEeitbd1Pnh9dhA" elementId="project20180913-q1-cheng.handledmenuitem.readfile" label="Read File and Show Hello" command="_IoMckLeYEeitbd1Pnh9dhA"/>
+      </children>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_Yy3e8LeZEeitbd1Pnh9dhA" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_jKMfILeZEeitbd1Pnh9dhA" elementId="project20180913-q1-cheng.partdescriptor.simpleview20180913q1kwoksuncheng" label="Simple View 20180913 Q1 Kwok Sun Cheng" contributionURI="bundleclass://project20180913-Q1-CHENG/view.SimpleView20180913Q1KwokSunCheng">
+      <handlers xmi:id="_R6QhALecEeitbd1Pnh9dhA" elementId="project20180913-q1-cheng.handler.1" contributionURI="bundleclass://project20180913-Q1-CHENG/handler.ReverseHandler" command="_TLVuYLecEeitbd1Pnh9dhA"/>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_wlkiULedEeitbd1Pnh9dhA" elementId="project20180913-q1-cheng.popupmenu.mypopup" label="My Popup">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_y4XrYLedEeitbd1Pnh9dhA" elementId="project20180913-q1-cheng.handledmenuitem.reverse" label="Reverse" command="_TLVuYLecEeitbd1Pnh9dhA"/>
+      </menus>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_sJhVILeaEeitbd1Pnh9dhA" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_t-xmkLeaEeitbd1Pnh9dhA" elementId="project20180913-q1-cheng.handler.0" contributionURI="bundleclass://project20180913-Q1-CHENG/handler.ReadFileAndShowHelloHandler" command="_IoMckLeYEeitbd1Pnh9dhA"/>
+  </fragments>
+</fragment:ModelFragments>
