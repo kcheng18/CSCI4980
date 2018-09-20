@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_kTsdkL0aEeipjoOyRRoULg">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_lBZ4IL0aEeipjoOyRRoULg" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_WXjWAL0eEeipjoOyRRoULg" elementId="project0920-add-delete-cheng.handler.0" contributionURI="bundleclass://project0920-add-delete-CHENG/handler.AddPersonHandler" command="_Xl6mkL0eEeipjoOyRRoULg"/>
+    <elements xsi:type="commands:Handler" xmi:id="_XD43kL0eEeipjoOyRRoULg" elementId="project0920-add-delete-cheng.handler.1" contributionURI="bundleclass://project0920-add-delete-CHENG/handler.DelPersonHandler" command="_YGdu4L0eEeipjoOyRRoULg"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_qGMAoL0aEeipjoOyRRoULg" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_Xl6mkL0eEeipjoOyRRoULg" elementId="project0920-add-delete-cheng.command.addpersoncommand" commandName="Add Person Command"/>
+    <elements xsi:type="commands:Command" xmi:id="_YGdu4L0eEeipjoOyRRoULg" elementId="project0920-add-delete-cheng.command.deletepersoncommand" commandName="Delete Person Command"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_sYs10L0aEeipjoOyRRoULg" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_ssf-wL0eEeipjoOyRRoULg" elementId="project0920-add-delete-cheng.partdescriptor.simpletableinsertdeletecheng" label="Simple Table Insert Delete CHENG" iconURI="platform:/plugin/project0920-add-delete-CHENG/icons/sample.png" contributionURI="bundleclass://project0920-add-delete-CHENG/view.MyTableViewer">
+      <menus xsi:type="menu:PopupMenu" xmi:id="_m_lNUL0gEeipjoOyRRoULg" elementId="project0920-add-delete-cheng.popupmenu.mypopupmenu" label="My Popup Menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_nlTJgL0gEeipjoOyRRoULg" elementId="project0920-add-delete-cheng.handledmenuitem.add" label="Add" command="_Xl6mkL0eEeipjoOyRRoULg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_oG0iML0gEeipjoOyRRoULg" elementId="project0920-add-delete-cheng.handledmenuitem.delete" label="Delete" command="_YGdu4L0eEeipjoOyRRoULg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_o224AL0gEeipjoOyRRoULg" elementId="project0920-add-delete-cheng.handledmenuitem.export" label="Export"/>
+      </menus>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>
