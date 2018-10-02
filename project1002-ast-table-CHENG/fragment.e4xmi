@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmi:id="_cpbkYMaNEeific-M-gPAxw">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_eXwHYMaNEeific-M-gPAxw" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_gnNokMaNEeific-M-gPAxw" elementId="project1002-ast-table-cheng.partdescriptor.simpletableviewast1002cheng" label="Simple Table View AST 1002 CHENG" iconURI="platform:/plugin/project1002-ast-table-CHENG/icons/sample.png" contributionURI="bundleclass://project1002-ast-table-CHENG/view.Viewer"/>
+  </fragments>
+</fragment:ModelFragments>
