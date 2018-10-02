@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_2U580MKXEeiWSKp8jaMELg">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_46EBMMKXEeiWSKp8jaMELg" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_ycz_AMKZEeiWSKp8jaMELg" elementId="project2018-0927-q2-kwoksun-cheng.command.exportpersoncommand" commandName="Export Person Command"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_5UEcoMKXEeiWSKp8jaMELg" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_6cImAMKZEeiWSKp8jaMELg" elementId="project2018-0927-q2-kwoksun-cheng.handler.0" contributionURI="bundleclass://project2018-0927-Q2-KWOKSUN-CHENG/handler.ExportPersonHandler" command="_ycz_AMKZEeiWSKp8jaMELg"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_5pAx4MKXEeiWSKp8jaMELg" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_phuv0MKYEeiWSKp8jaMELg" elementId="project2018-0927-q2-kwoksun-cheng.partdescriptor.simpletalbeview20180927kwoksuncheng" label="Simple Talbe View 2018 0927 Kwok Sun Cheng" iconURI="platform:/plugin/project2018-0927-Q2-KWOKSUN-CHENG/icons/sample.png" contributionURI="bundleclass://project2018-0927-Q2-KWOKSUN-CHENG/view.SimpleTableView20180927KwokSunCheng"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_86naoMKZEeiWSKp8jaMELg" featurename="menuContributions" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="menu:MenuContribution" xmi:id="_-4CJkMKZEeiWSKp8jaMELg" elementId="project2018-0927-q2-kwoksun-cheng.menucontribution.0" positionInParent="after=window" parentId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_HZGywMKaEeiWSKp8jaMELg" elementId="project2018-0927-q2-kwoksun-cheng.menu.2018-0927-kwoksun-cheng" label="2018-0927-KwokSun-Cheng">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_NnfnoMKaEeiWSKp8jaMELg" elementId="project2018-0927-q2-kwoksun-cheng.handledmenuitem.export" label="Export" command="_ycz_AMKZEeiWSKp8jaMELg"/>
+      </children>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>
