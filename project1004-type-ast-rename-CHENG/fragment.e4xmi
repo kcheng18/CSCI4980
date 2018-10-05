@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_fwr6AMgeEeicOMmYOe4NVQ">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_mFya4MgeEeicOMmYOe4NVQ" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_nvarIMgeEeicOMmYOe4NVQ" elementId="project1004-type-ast-rename-cheng.partdescriptor.simpletableview-renametypeast-1004cheng" label="Simple Table View - Rename Type AST - 1004 CHENG" iconURI="platform:/plugin/project1004-type-ast-rename-CHENG/icons/sample.png" contributionURI="bundleclass://project1004-type-ast-rename-CHENG/view.MyTableViewer">
+      <menus xsi:type="menu:PopupMenu" xmi:id="_Hy_f4MggEeicOMmYOe4NVQ" elementId="project1004-type-ast-rename-cheng.popupmenu.mypopupmenu" label="My Popup Menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_LA2jAMggEeicOMmYOe4NVQ" elementId="project1004-type-ast-rename-cheng.handledmenuitem.refresh" label="Refresh" command="_tWhoIMgfEeicOMmYOe4NVQ"/>
+      </menus>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_rcp8cMgfEeicOMmYOe4NVQ" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_w8OjgMgfEeicOMmYOe4NVQ" elementId="project1004-type-ast-rename-cheng.handler.0" contributionURI="bundleclass://project1004-type-ast-rename-CHENG/handler.TableRefreshHandler" command="_tWhoIMgfEeicOMmYOe4NVQ"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_rr6gcMgfEeicOMmYOe4NVQ" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_tWhoIMgfEeicOMmYOe4NVQ" elementId="project1004-type-ast-rename-cheng.command.refresh" commandName="Refresh"/>
+  </fragments>
+</fragment:ModelFragments>
