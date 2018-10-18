@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_sYq_oNMeEeigop772mqpAA">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_s5AFgNMeEeigop772mqpAA" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_zDnNoNMeEeigop772mqpAA" elementId="project1018-type-delete-ast-cheng.command.refresh" commandName="Refresh"/>
+    <elements xsi:type="commands:Command" xmi:id="_zUMnUNMeEeigop772mqpAA" elementId="project1018-type-delete-ast-cheng.command.deleteemptymethod" commandName="Delete Empty Method"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_tJib4NMeEeigop772mqpAA" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_7MLQMNMeEeigop772mqpAA" elementId="project1018-type-delete-ast-cheng.handler.0" contributionURI="bundleclass://project1018-type-delete-ast-CHENG/handler.RefreshHandler" command="_zDnNoNMeEeigop772mqpAA"/>
+    <elements xsi:type="commands:Handler" xmi:id="_7nO0gNMeEeigop772mqpAA" elementId="project1018-type-delete-ast-cheng.handler.1" contributionURI="bundleclass://project1018-type-delete-ast-CHENG/handler.DeleteEmptyMethodHandler" command="_zUMnUNMeEeigop772mqpAA"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_tkNlsNMeEeigop772mqpAA" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_yrfokNMeEeigop772mqpAA" elementId="project1018-type-delete-ast-cheng.partdescriptor.simpletableview-deletemethodast-1018cheng" label="Simple Table View - Delete Method AST - 1018 Cheng" iconURI="platform:/plugin/project1018-type-delete-ast-CHENG/icons/sample.png" contributionURI="bundleclass://project1018-type-delete-ast-CHENG/view.MyTableViewer">
+      <menus xsi:type="menu:PopupMenu" xmi:id="_SCPMgNMgEeigop772mqpAA" elementId="project1018-type-delete-ast-cheng.popupmenu.mypopupmenu" label="My Popup Menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_V33aQNMgEeigop772mqpAA" elementId="project1018-type-delete-ast-cheng.handledmenuitem.refresh" label="Refresh" command="_zDnNoNMeEeigop772mqpAA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_Wj1IYNMgEeigop772mqpAA" elementId="project1018-type-delete-ast-cheng.handledmenuitem.deleteemptymethod" label="Delete Empty Method" command="_zUMnUNMeEeigop772mqpAA"/>
+      </menus>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_20J5kM2YEeioQoFNfkzRSw">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_3V57wM2YEeioQoFNfkzRSw" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_4sYmgM2YEeioQoFNfkzRSw" elementId="project2018-1011-midterm-kwoksun-cheng.partdescriptor.simpletableview20181011midtermkwoksuncheng" label="Simple Table View 2018 1011 Midterm Kwok Sun Cheng" iconURI="platform:/plugin/project2018-1011-Midterm-KwokSun-Cheng/icons/sample.png" contributionURI="bundleclass://project2018-1011-Midterm-KwokSun-Cheng/view.SimpleTalbeView20181011MidtermKwokSunCheng">
+      <menus xsi:type="menu:PopupMenu" xmi:id="_TdXq0M2bEeioQoFNfkzRSw" elementId="project2018-1011-midterm-kwoksun-cheng.popupmenu.mypopupmenu" label="My Popup Menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_twpxYM2bEeioQoFNfkzRSw" elementId="project2018-1011-midterm-kwoksun-cheng.handledmenuitem.export" label="Export" command="_5RFusM2bEeioQoFNfkzRSw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_I_kZwM2cEeioQoFNfkzRSw" elementId="project2018-1011-midterm-kwoksun-cheng.handledmenuitem.movetop" label="Move Top" command="_7FMwoM2bEeioQoFNfkzRSw"/>
+      </menus>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_2Kd8AM2bEeioQoFNfkzRSw" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_5RFusM2bEeioQoFNfkzRSw" elementId="project2018-1011-midterm-kwoksun-cheng.command.export" commandName="Export"/>
+    <elements xsi:type="commands:Command" xmi:id="_7FMwoM2bEeioQoFNfkzRSw" elementId="project2018-1011-midterm-kwoksun-cheng.command.movetop" commandName="Move Top"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_30DwAM2bEeioQoFNfkzRSw" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_83zWsM2bEeioQoFNfkzRSw" elementId="project2018-1011-midterm-kwoksun-cheng.handler.0" contributionURI="bundleclass://project2018-1011-Midterm-KwokSun-Cheng/handler.ExportHandler" command="_5RFusM2bEeioQoFNfkzRSw"/>
+    <elements xsi:type="commands:Handler" xmi:id="_98xasM2bEeioQoFNfkzRSw" elementId="project2018-1011-midterm-kwoksun-cheng.handler.1" contributionURI="bundleclass://project2018-1011-Midterm-KwokSun-Cheng/handler.MoveTopHandler" command="_7FMwoM2bEeioQoFNfkzRSw"/>
+  </fragments>
+</fragment:ModelFragments>

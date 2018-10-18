@@ -70,7 +70,7 @@ public class AddPersonDialog extends TitleAreaDialog {
       button.addSelectionListener(new SelectionAdapter() {
          public void widgetSelected(SelectionEvent e) {
             if (text1.getText().length() != 0 && text2.getText().length() != 0 && text3.getText().length() != 0 && text4.getText().length() != 0) {
-               person = new Person(text1.getText(), text2.getText(), text1.getText(), text2.getText());
+               person = new Person(text1.getText(), text2.getText(), text3.getText(), text4.getText());
                close();
             } else {
                setErrorMessage("Please enter all data");
