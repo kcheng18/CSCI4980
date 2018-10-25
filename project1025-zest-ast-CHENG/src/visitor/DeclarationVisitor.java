@@ -53,7 +53,7 @@ public class DeclarationVisitor extends ASTVisitor {
    }
 
    private boolean isEmptyBody(MethodDeclaration methodDecl) {
-      // TODO: Class Exercise
+      // TODO: Class Exercises
 	   if(methodDecl.getBody().statements().isEmpty()) {
 		   return true;		   
 	   }	   
