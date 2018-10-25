@@ -45,7 +45,7 @@ public class DeclarationVisitor extends ASTVisitor {
       } else {
          String methodName = methodDecl.getName().getFullyQualifiedName();
          String methodNodeName = typeName + "." + methodName;
-         // TODO: Class Exercise
+         // TODO: Class Exercises
          boolean isEmptyBody = isEmptyBody(methodDecl);
          classNode.addChildNode(new DataNode(methodNodeName, isEmptyBody));
       }
