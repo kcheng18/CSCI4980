@@ -96,6 +96,7 @@ public class DeclarationVisitorClassEx extends ASTVisitor {
           dstGNode instanceof GMethodNode && 
           astNode instanceof MethodDeclaration) {
           return UtilNode.getMethodReturnType(astNode);
+    	   //return UtilNode.getTypeModifier(astNode);
        } 
       return null;
    }

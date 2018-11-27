@@ -7,6 +7,9 @@
  */
 package analysis;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.eclipse.core.resources.IProject; 
 import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.CoreException;
@@ -19,6 +22,7 @@ import org.eclipse.jdt.core.dom.AST;
 import org.eclipse.jdt.core.dom.ASTParser;
 import org.eclipse.jdt.core.dom.CompilationUnit;
 
+import data.DataNode;
 import graph.builder.GModelBuilder;
 import graph.model.GNode;
 import graph.model.node.GPackageNode;
@@ -27,6 +31,7 @@ import visitor.DeclarationVisitor;
 public class ProjectAnalyzer {
    private static final String JAVANATURE = "org.eclipse.jdt.core.javanature";
    protected String prjName, pkgName;
+   List<DataNode> nodeList = new ArrayList<DataNode>();
 
    public void analyze() throws CoreException {
       GModelBuilder.instance().reset();
@@ -80,5 +85,9 @@ public class ProjectAnalyzer {
       parser.setSource(unit);
       parser.setResolveBindings(true);
       return (CompilationUnit) parser.createAST(null); // parse
+   }
+   
+   public List<DataNode> getNodeList() {
+	      return this.nodeList;
    }
 }

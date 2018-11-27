@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_3PmBYOzyEei12cbtAStERQ">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_EMShUOzzEei12cbtAStERQ" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_GoKt4OzzEei12cbtAStERQ" elementId="project1120-q3-cheng.partdescriptor.chengzestview" label="CHENG Zest View" iconURI="platform:/plugin/project1120-Q3-Cheng/icons/sample.png" contributionURI="bundleclass://project1120-Q3-Cheng/view.SimpleZestGraphView">
+      <menus xsi:type="menu:PopupMenu" xmi:id="_PrVXgOzzEei12cbtAStERQ" elementId="project1120-q3-cheng.popupmenu.mypopupmenu" label="My Popup Menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_Sn_V4OzzEei12cbtAStERQ" elementId="project1120-q3-cheng.handledmenuitem.chengmenuitem" label="CHENG Menu Item" command="_LxM2sO0TEeiXh8eGAHcNuQ"/>
+      </menus>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_W1UR8OzzEei12cbtAStERQ" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_LxM2sO0TEeiXh8eGAHcNuQ" elementId="project1120-q3-cheng.command.refresh" commandName="Refresh"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_bksyMOzzEei12cbtAStERQ" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_OJb5YO0TEeiXh8eGAHcNuQ" elementId="project1120-q3-cheng.handler.1" contributionURI="bundleclass://project1120-Q3-Cheng/handler.UpdateGraphViewHandlerClassEx" command="_LxM2sO0TEeiXh8eGAHcNuQ"/>
+  </fragments>
+</fragment:ModelFragments>

@@ -45,7 +45,7 @@ public class MyGraphView {
    private GraphViewer gViewer;
    private int layout = 0;
    private Menu mPopupMenu = null;
-   private MenuItem menuItemMoveMethod = null, menuItemRefresh = null;
+   private MenuItem menuItemMoveMethod = null, menuItemRefresh = null, menuItemOpenNodeInNewView = null;
    private GraphNode selectedSrcGraphNode = null, selectedDstGraphNode = null;
    private GraphNode prevSelectedDstGraphNode = null;
 
@@ -75,6 +75,10 @@ public class MyGraphView {
       menuItemRefresh = new MenuItem(mPopupMenu, SWT.CASCADE);
       menuItemRefresh.setText("Refresh");
       addSelectionListenerMenuItemRefresh();
+      
+      menuItemOpenNodeInNewView = new MenuItem(mPopupMenu, SWT.CASCADE);
+      menuItemOpenNodeInNewView.setText("Open node in new view");
+      addSelectionListenerMenuItemOpenNodeInNewView();
    }
 
    private void addMouseListenerGraphViewer() {
@@ -226,6 +230,30 @@ public class MyGraphView {
          }
       };
       menuItemRefresh.addSelectionListener(menuItemListenerRefresh);
+   }
+   
+   private void addSelectionListenerMenuItemOpenNodeInNewView() {
+	   SelectionListener menuItemListenerOpenNodeInNewView = new SelectionListener() {
+		   @Override
+	       public void widgetSelected(SelectionEvent e) {
+			   if (!isNodesSelected()) {
+	               String msg = "Please select a class to open a new view";
+	               UtilMsg.openWarning(msg);
+	               System.out.println("[DBG] " + msg);
+	               return;
+	            }
+	       }
+		   
+		   private boolean isNodesSelected() {
+	            return selectedGMethodNode != null && selectedGMethodNode.getNodeType().equals(GNodeType.UserSelection) && //
+	            selectedGClassNode != null && selectedGClassNode.getNodeType().equals(GNodeType.UserDoubleClicked);
+	       }
+		   
+		   @Override
+	       public void widgetDefaultSelected(SelectionEvent e) {
+	       }
+	   };
+	   menuItemOpenNodeInNewView.addSelectionListener(menuItemListenerOpenNodeInNewView);
    }
 
    private void resetSelectedSrcGraphNode() {

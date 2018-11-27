@@ -46,6 +46,17 @@ public class UtilNode {
 
    public static String getMethodReturnType(ASTNode astNode) {
       MethodDeclaration node = (MethodDeclaration) astNode;
-      return node.getReturnType2().toString();
+      StringBuilder buffer = new StringBuilder();
+      List<?> modifiers = node.modifiers();
+      System.out.println("[DBG] modifiers' size: " + modifiers.size());
+      for (Object m : modifiers) {
+         if (m instanceof Modifier) {
+            Modifier mod = (Modifier) m;
+            String modStr = mod.getKeyword().toString();
+            buffer.append(modStr + " ");
+         }
+      }
+      return buffer.toString().trim();
+      /*return node.toString().trim();*/
    }
 }
